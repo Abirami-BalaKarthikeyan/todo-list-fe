@@ -43,7 +43,7 @@ function App() {
             backgroundColor: "#fffdaf",
             color: "#9d174d",
             "&:hover": {
-              backgroundColor: "#fffd8d",
+              backgroundColor: "#fffd8e",
             },
             whiteSpace: "nowrap",
           }}
