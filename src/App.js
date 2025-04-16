@@ -49,7 +49,7 @@ function App() {
           }}
           onClick={() => setOpenDialog(true)}
         >
-          Add new task
+          Add new task !!
           <img src={AddIcon} alt="Add" className="ml-2 w-8 h-8" />
         </Button>
       </div>
