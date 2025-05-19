@@ -1,71 +1,73 @@
-import React, { useState, useEffect } from "react";
-import TodoCard from "./component/TodoCard";
-import { useQuery } from "react-query";
-import { getTodoList } from "./lib/todoList-api";
-import { Button } from "@mui/material";
-import AddIcon from "./assests/add.png";
-import EditDialog from "./component/EditDialog";
+import React from "react";
+import "./App.css";
+import SubmissionBarChart from "./components/SubmissionBarChart";
+import SubmissionLineChart from "./components/SubmissionLineChart";
+import SubmissionTreeChart from "./components/SubmissionTreeChart";
+import SubmissionBoxPlot from "./components/SubmissionBoxPlot";
+import SubmissionAreaBump from "./components/SubmissionAreaBump";
+import SubmissionCirclePacking from "./components/SubmissionCirclePacking";
+import SubmissionChordChart from "./components/SubmissionChordChart";
+import SubmissionMultiLineChart from "./components/SubmissionMultiLineChart";
+import SubmissionStackedBarChart from "./components/SubmissionStackedBarChart";
+import SubmissionGroupedBarChart from "./components/SubmissionGroupedBarChart";
+import SubmissionHeatmap from "./components/SubmissionHeatmap";
+import SubmissionDonutChart from "./components/SubmissionDonutChart";
+import SubmissionRadarChart from "./components/SubmissionRadarChart";
+import SubmissionAreaChart from "./components/SubmissionAreaChart";
+import SubmissionColumnChart from "./components/SubmissionColumnChart";
+import { generateCombinationData } from "./generateData";
 
 function App() {
-  const [todos, setTodo] = useState([]);
-  const [openDialog, setOpenDialog] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const { refetch } = useQuery("todoList", getTodoList, {
-    onSuccess: ({ data }) => {
-      setTodo(data);
-    },
-  });
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const data = generateCombinationData();
   return (
-    <div className="container mx-auto  bg-red-100 min-h-screen">
-      <div
-        className={`flex justify-between items-center p-4 mb-8 bg-red-100 sticky top-0 z-10 transition-shadow ${
-          isScrolled ? "shadow-lg" : ""
-        }`}
-      >
-        <div className="text-3xl font-bold text-pink-800 flex-grow italic">
-          To-do List
-        </div>
-        <Button
-          type="submit"
-          variant="contained"
-          className="w-[200px] h-12 text-xs"
-          sx={{
-            backgroundColor: "#fffdaf",
-            color: "#9d174d",
-            "&:hover": {
-              backgroundColor: "#fffd8e",
-            },
-            whiteSpace: "nowrap",
-          }}
-          onClick={() => setOpenDialog(true)}
-        >
-          Add new task !!
-          <img src={AddIcon} alt="Add" className="ml-2 w-8 h-8" />
-        </Button>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-        {todos.map((todo) => (
-          <TodoCard
-            key={todo.id}
-            title={todo.title}
-            description={todo.description}
-            status={todo.status}
-            id={todo.id}
-            refetch={refetch}
-          />
-        ))}
-      </div>
-      <EditDialog open={openDialog} onClose={() => setOpenDialog(false)} />
+    <div className="App">
+      <header className="App-header">
+        <h1>Submission Data Visualization</h1>
+      </header>
+      <main>
+        {/* <h2>1. Multi-Line Chart</h2>
+        <SubmissionMultiLineChart data={data} /> */}
+
+        <h2>2. Stacked Bar Chart</h2>
+        <SubmissionStackedBarChart data={data} />
+
+        {/*  <h2>3. Grouped Bar Chart</h2>
+        <SubmissionGroupedBarChart data={data} />
+
+        <h2>4. Heatmap</h2>
+        <SubmissionHeatmap data={data} />
+
+        <h2>5. Donut Chart</h2>
+        <SubmissionDonutChart data={data} />
+
+        <h2>6. Radar Chart</h2>
+        <SubmissionRadarChart data={data} />
+
+        <h2>7. Area Chart</h2>
+        <SubmissionAreaChart data={data} />
+
+        <h2>8. Column Chart</h2>
+        <SubmissionColumnChart data={data} /> */}
+
+        {/* Original charts */}
+        {/* <h2>Circle Packing Chart</h2>
+        <SubmissionCirclePacking data={data} />
+
+        <h2>Area Bump Chart</h2>
+        <SubmissionAreaBump data={data} />
+
+        <h2>Bar Chart</h2>
+        <SubmissionBarChart data={data} />
+
+        <h2>Line Chart</h2>
+        <SubmissionLineChart data={data} />
+
+        <h2>Tree Chart</h2>
+        <SubmissionTreeChart data={data} />
+
+        <h2>Box Plot</h2>
+        <SubmissionBoxPlot data={data} /> */}
+      </main>
     </div>
   );
 }
