@@ -1,0 +1,1560 @@
+[
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 100, "submissionSuccess": 99 },
+      { "date": "13/04/2005", "totalSubmission": 100, "submissionSuccess": 99 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 85, "submissionSuccess": 80 },
+      { "date": "13/04/2005", "totalSubmission": 90, "submissionSuccess": 88 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 110,
+        "submissionSuccess": 105
+      },
+      { "date": "13/04/2005", "totalSubmission": 105, "submissionSuccess": 100 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 75, "submissionSuccess": 70 },
+      { "date": "13/04/2005", "totalSubmission": 80, "submissionSuccess": 78 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 95, "submissionSuccess": 92 },
+      { "date": "13/04/2005", "totalSubmission": 100, "submissionSuccess": 98 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 65, "submissionSuccess": 60 },
+      { "date": "13/04/2005", "totalSubmission": 70, "submissionSuccess": 68 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 120,
+        "submissionSuccess": 115
+      },
+      { "date": "13/04/2005", "totalSubmission": 115, "submissionSuccess": 110 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 55, "submissionSuccess": 50 },
+      { "date": "13/04/2005", "totalSubmission": 60, "submissionSuccess": 58 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 80, "submissionSuccess": 75 },
+      { "date": "13/04/2005", "totalSubmission": 85, "submissionSuccess": 82 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 70, "submissionSuccess": 65 },
+      { "date": "13/04/2005", "totalSubmission": 75, "submissionSuccess": 72 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 105,
+        "submissionSuccess": 100
+      },
+      { "date": "13/04/2005", "totalSubmission": 110, "submissionSuccess": 108 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 50, "submissionSuccess": 45 },
+      { "date": "13/04/2005", "totalSubmission": 55, "submissionSuccess": 52 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 90, "submissionSuccess": 85 },
+      { "date": "13/04/2005", "totalSubmission": 95, "submissionSuccess": 92 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 60, "submissionSuccess": 55 },
+      { "date": "13/04/2005", "totalSubmission": 65, "submissionSuccess": 62 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 115,
+        "submissionSuccess": 110
+      },
+      { "date": "13/04/2005", "totalSubmission": 120, "submissionSuccess": 118 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 45, "submissionSuccess": 40 },
+      { "date": "13/04/2005", "totalSubmission": 50, "submissionSuccess": 48 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 85, "submissionSuccess": 80 },
+      { "date": "13/04/2005", "totalSubmission": 90, "submissionSuccess": 88 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 70, "submissionSuccess": 65 },
+      { "date": "13/04/2005", "totalSubmission": 75, "submissionSuccess": 72 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 98, "submissionSuccess": 97 },
+      { "date": "13/04/2005", "totalSubmission": 99, "submissionSuccess": 98 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 88, "submissionSuccess": 83 },
+      { "date": "13/04/2005", "totalSubmission": 93, "submissionSuccess": 91 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 113,
+        "submissionSuccess": 108
+      },
+      { "date": "13/04/2005", "totalSubmission": 108, "submissionSuccess": 103 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 78, "submissionSuccess": 73 },
+      { "date": "13/04/2005", "totalSubmission": 83, "submissionSuccess": 81 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 98, "submissionSuccess": 95 },
+      { "date": "13/04/2005", "totalSubmission": 103, "submissionSuccess": 101 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 68, "submissionSuccess": 63 },
+      { "date": "13/04/2005", "totalSubmission": 73, "submissionSuccess": 71 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 118,
+        "submissionSuccess": 113
+      },
+      { "date": "13/04/2005", "totalSubmission": 113, "submissionSuccess": 108 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 58, "submissionSuccess": 53 },
+      { "date": "13/04/2005", "totalSubmission": 63, "submissionSuccess": 61 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 83, "submissionSuccess": 78 },
+      { "date": "13/04/2005", "totalSubmission": 88, "submissionSuccess": 85 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 73, "submissionSuccess": 68 },
+      { "date": "13/04/2005", "totalSubmission": 78, "submissionSuccess": 75 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 108,
+        "submissionSuccess": 103
+      },
+      { "date": "13/04/2005", "totalSubmission": 113, "submissionSuccess": 111 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 53, "submissionSuccess": 48 },
+      { "date": "13/04/2005", "totalSubmission": 58, "submissionSuccess": 55 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 93, "submissionSuccess": 88 },
+      { "date": "13/04/2005", "totalSubmission": 98, "submissionSuccess": 95 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 63, "submissionSuccess": 58 },
+      { "date": "13/04/2005", "totalSubmission": 68, "submissionSuccess": 65 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 118,
+        "submissionSuccess": 113
+      },
+      { "date": "13/04/2005", "totalSubmission": 123, "submissionSuccess": 121 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 48, "submissionSuccess": 43 },
+      { "date": "13/04/2005", "totalSubmission": 53, "submissionSuccess": 51 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 88, "submissionSuccess": 83 },
+      { "date": "13/04/2005", "totalSubmission": 93, "submissionSuccess": 91 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 73, "submissionSuccess": 68 },
+      { "date": "13/04/2005", "totalSubmission": 78, "submissionSuccess": 75 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 96, "submissionSuccess": 95 },
+      { "date": "13/04/2005", "totalSubmission": 97, "submissionSuccess": 96 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 86, "submissionSuccess": 81 },
+      { "date": "13/04/2005", "totalSubmission": 91, "submissionSuccess": 89 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 111,
+        "submissionSuccess": 106
+      },
+      { "date": "13/04/2005", "totalSubmission": 106, "submissionSuccess": 101 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 76, "submissionSuccess": 71 },
+      { "date": "13/04/2005", "totalSubmission": 81, "submissionSuccess": 79 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 96, "submissionSuccess": 93 },
+      { "date": "13/04/2005", "totalSubmission": 101, "submissionSuccess": 99 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 66, "submissionSuccess": 61 },
+      { "date": "13/04/2005", "totalSubmission": 71, "submissionSuccess": 69 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 116,
+        "submissionSuccess": 111
+      },
+      { "date": "13/04/2005", "totalSubmission": 111, "submissionSuccess": 106 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 56, "submissionSuccess": 51 },
+      { "date": "13/04/2005", "totalSubmission": 61, "submissionSuccess": 59 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 81, "submissionSuccess": 76 },
+      { "date": "13/04/2005", "totalSubmission": 86, "submissionSuccess": 83 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 71, "submissionSuccess": 66 },
+      { "date": "13/04/2005", "totalSubmission": 76, "submissionSuccess": 73 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 106,
+        "submissionSuccess": 101
+      },
+      { "date": "13/04/2005", "totalSubmission": 111, "submissionSuccess": 109 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 51, "submissionSuccess": 46 },
+      { "date": "13/04/2005", "totalSubmission": 56, "submissionSuccess": 53 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 91, "submissionSuccess": 86 },
+      { "date": "13/04/2005", "totalSubmission": 96, "submissionSuccess": 93 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 61, "submissionSuccess": 56 },
+      { "date": "13/04/2005", "totalSubmission": 66, "submissionSuccess": 63 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 116,
+        "submissionSuccess": 111
+      },
+      { "date": "13/04/2005", "totalSubmission": 121, "submissionSuccess": 119 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 46, "submissionSuccess": 41 },
+      { "date": "13/04/2005", "totalSubmission": 51, "submissionSuccess": 49 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 86, "submissionSuccess": 81 },
+      { "date": "13/04/2005", "totalSubmission": 91, "submissionSuccess": 89 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 71, "submissionSuccess": 66 },
+      { "date": "13/04/2005", "totalSubmission": 76, "submissionSuccess": 73 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 94, "submissionSuccess": 93 },
+      { "date": "13/04/2005", "totalSubmission": 95, "submissionSuccess": 94 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 84, "submissionSuccess": 79 },
+      { "date": "13/04/2005", "totalSubmission": 89, "submissionSuccess": 87 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 109,
+        "submissionSuccess": 104
+      },
+      { "date": "13/04/2005", "totalSubmission": 104, "submissionSuccess": 99 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 74, "submissionSuccess": 69 },
+      { "date": "13/04/2005", "totalSubmission": 79, "submissionSuccess": 77 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 94, "submissionSuccess": 91 },
+      { "date": "13/04/2005", "totalSubmission": 99, "submissionSuccess": 97 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 64, "submissionSuccess": 59 },
+      { "date": "13/04/2005", "totalSubmission": 69, "submissionSuccess": 67 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 114,
+        "submissionSuccess": 109
+      },
+      { "date": "13/04/2005", "totalSubmission": 109, "submissionSuccess": 104 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 54, "submissionSuccess": 49 },
+      { "date": "13/04/2005", "totalSubmission": 59, "submissionSuccess": 57 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 79, "submissionSuccess": 74 },
+      { "date": "13/04/2005", "totalSubmission": 84, "submissionSuccess": 81 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 69, "submissionSuccess": 64 },
+      { "date": "13/04/2005", "totalSubmission": 74, "submissionSuccess": 71 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 104, "submissionSuccess": 99 },
+      { "date": "13/04/2005", "totalSubmission": 109, "submissionSuccess": 107 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 49, "submissionSuccess": 44 },
+      { "date": "13/04/2005", "totalSubmission": 54, "submissionSuccess": 51 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 89, "submissionSuccess": 84 },
+      { "date": "13/04/2005", "totalSubmission": 94, "submissionSuccess": 91 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 59, "submissionSuccess": 54 },
+      { "date": "13/04/2005", "totalSubmission": 64, "submissionSuccess": 61 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 114,
+        "submissionSuccess": 109
+      },
+      { "date": "13/04/2005", "totalSubmission": 119, "submissionSuccess": 117 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 44, "submissionSuccess": 39 },
+      { "date": "13/04/2005", "totalSubmission": 49, "submissionSuccess": 47 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 84, "submissionSuccess": 79 },
+      { "date": "13/04/2005", "totalSubmission": 89, "submissionSuccess": 87 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 69, "submissionSuccess": 64 },
+      { "date": "13/04/2005", "totalSubmission": 74, "submissionSuccess": 71 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 92, "submissionSuccess": 91 },
+      { "date": "13/04/2005", "totalSubmission": 93, "submissionSuccess": 92 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 82, "submissionSuccess": 77 },
+      { "date": "13/04/2005", "totalSubmission": 87, "submissionSuccess": 85 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 107,
+        "submissionSuccess": 102
+      },
+      { "date": "13/04/2005", "totalSubmission": 102, "submissionSuccess": 97 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 72, "submissionSuccess": 67 },
+      { "date": "13/04/2005", "totalSubmission": 77, "submissionSuccess": 75 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 92, "submissionSuccess": 89 },
+      { "date": "13/04/2005", "totalSubmission": 97, "submissionSuccess": 95 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 62, "submissionSuccess": 57 },
+      { "date": "13/04/2005", "totalSubmission": 67, "submissionSuccess": 65 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 112,
+        "submissionSuccess": 107
+      },
+      { "date": "13/04/2005", "totalSubmission": 107, "submissionSuccess": 102 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 52, "submissionSuccess": 47 },
+      { "date": "13/04/2005", "totalSubmission": 57, "submissionSuccess": 55 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 77, "submissionSuccess": 72 },
+      { "date": "13/04/2005", "totalSubmission": 82, "submissionSuccess": 79 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 67, "submissionSuccess": 62 },
+      { "date": "13/04/2005", "totalSubmission": 72, "submissionSuccess": 69 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 102, "submissionSuccess": 97 },
+      { "date": "13/04/2005", "totalSubmission": 107, "submissionSuccess": 105 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 47, "submissionSuccess": 42 },
+      { "date": "13/04/2005", "totalSubmission": 52, "submissionSuccess": 49 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 87, "submissionSuccess": 82 },
+      { "date": "13/04/2005", "totalSubmission": 92, "submissionSuccess": 89 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 57, "submissionSuccess": 52 },
+      { "date": "13/04/2005", "totalSubmission": 62, "submissionSuccess": 59 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 112,
+        "submissionSuccess": 107
+      },
+      { "date": "13/04/2005", "totalSubmission": 117, "submissionSuccess": 115 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 42, "submissionSuccess": 37 },
+      { "date": "13/04/2005", "totalSubmission": 47, "submissionSuccess": 45 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 82, "submissionSuccess": 77 },
+      { "date": "13/04/2005", "totalSubmission": 87, "submissionSuccess": 85 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 67, "submissionSuccess": 62 },
+      { "date": "13/04/2005", "totalSubmission": 72, "submissionSuccess": 69 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 90, "submissionSuccess": 89 },
+      { "date": "13/04/2005", "totalSubmission": 91, "submissionSuccess": 90 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 80, "submissionSuccess": 75 },
+      { "date": "13/04/2005", "totalSubmission": 85, "submissionSuccess": 83 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 105,
+        "submissionSuccess": 100
+      },
+      { "date": "13/04/2005", "totalSubmission": 100, "submissionSuccess": 95 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 70, "submissionSuccess": 65 },
+      { "date": "13/04/2005", "totalSubmission": 75, "submissionSuccess": 73 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 90, "submissionSuccess": 87 },
+      { "date": "13/04/2005", "totalSubmission": 95, "submissionSuccess": 93 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 60, "submissionSuccess": 55 },
+      { "date": "13/04/2005", "totalSubmission": 65, "submissionSuccess": 63 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 110,
+        "submissionSuccess": 105
+      },
+      { "date": "13/04/2005", "totalSubmission": 105, "submissionSuccess": 100 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 50, "submissionSuccess": 45 },
+      { "date": "13/04/2005", "totalSubmission": 55, "submissionSuccess": 53 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 75, "submissionSuccess": 70 },
+      { "date": "13/04/2005", "totalSubmission": 80, "submissionSuccess": 77 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 65, "submissionSuccess": 60 },
+      { "date": "13/04/2005", "totalSubmission": 70, "submissionSuccess": 67 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 100, "submissionSuccess": 95 },
+      { "date": "13/04/2005", "totalSubmission": 105, "submissionSuccess": 103 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 45, "submissionSuccess": 40 },
+      { "date": "13/04/2005", "totalSubmission": 50, "submissionSuccess": 47 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 85, "submissionSuccess": 80 },
+      { "date": "13/04/2005", "totalSubmission": 90, "submissionSuccess": 87 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 55, "submissionSuccess": 50 },
+      { "date": "13/04/2005", "totalSubmission": 60, "submissionSuccess": 57 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 110,
+        "submissionSuccess": 105
+      },
+      { "date": "13/04/2005", "totalSubmission": 115, "submissionSuccess": 113 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 40, "submissionSuccess": 35 },
+      { "date": "13/04/2005", "totalSubmission": 45, "submissionSuccess": 43 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 80, "submissionSuccess": 75 },
+      { "date": "13/04/2005", "totalSubmission": 85, "submissionSuccess": 83 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 65, "submissionSuccess": 60 },
+      { "date": "13/04/2005", "totalSubmission": 70, "submissionSuccess": 67 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 88, "submissionSuccess": 87 },
+      { "date": "13/04/2005", "totalSubmission": 89, "submissionSuccess": 88 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 78, "submissionSuccess": 73 },
+      { "date": "13/04/2005", "totalSubmission": 83, "submissionSuccess": 81 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 103, "submissionSuccess": 98 },
+      { "date": "13/04/2005", "totalSubmission": 98, "submissionSuccess": 93 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 68, "submissionSuccess": 63 },
+      { "date": "13/04/2005", "totalSubmission": 73, "submissionSuccess": 71 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 88, "submissionSuccess": 85 },
+      { "date": "13/04/2005", "totalSubmission": 93, "submissionSuccess": 91 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 58, "submissionSuccess": 53 },
+      { "date": "13/04/2005", "totalSubmission": 63, "submissionSuccess": 61 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 108,
+        "submissionSuccess": 103
+      },
+      { "date": "13/04/2005", "totalSubmission": 103, "submissionSuccess": 98 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 48, "submissionSuccess": 43 },
+      { "date": "13/04/2005", "totalSubmission": 53, "submissionSuccess": 51 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 73, "submissionSuccess": 68 },
+      { "date": "13/04/2005", "totalSubmission": 78, "submissionSuccess": 75 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 63, "submissionSuccess": 58 },
+      { "date": "13/04/2005", "totalSubmission": 68, "submissionSuccess": 65 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 98, "submissionSuccess": 93 },
+      { "date": "13/04/2005", "totalSubmission": 103, "submissionSuccess": 101 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 43, "submissionSuccess": 38 },
+      { "date": "13/04/2005", "totalSubmission": 48, "submissionSuccess": 45 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 83, "submissionSuccess": 78 },
+      { "date": "13/04/2005", "totalSubmission": 88, "submissionSuccess": 85 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 53, "submissionSuccess": 48 },
+      { "date": "13/04/2005", "totalSubmission": 58, "submissionSuccess": 55 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 108,
+        "submissionSuccess": 103
+      },
+      { "date": "13/04/2005", "totalSubmission": 113, "submissionSuccess": 111 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 38, "submissionSuccess": 33 },
+      { "date": "13/04/2005", "totalSubmission": 43, "submissionSuccess": 41 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 78, "submissionSuccess": 73 },
+      { "date": "13/04/2005", "totalSubmission": 83, "submissionSuccess": 81 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 63, "submissionSuccess": 58 },
+      { "date": "13/04/2005", "totalSubmission": 68, "submissionSuccess": 65 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 86, "submissionSuccess": 85 },
+      { "date": "13/04/2005", "totalSubmission": 87, "submissionSuccess": 86 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 76, "submissionSuccess": 71 },
+      { "date": "13/04/2005", "totalSubmission": 81, "submissionSuccess": 79 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 101, "submissionSuccess": 96 },
+      { "date": "13/04/2005", "totalSubmission": 96, "submissionSuccess": 91 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 66, "submissionSuccess": 61 },
+      { "date": "13/04/2005", "totalSubmission": 71, "submissionSuccess": 69 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 86, "submissionSuccess": 83 },
+      { "date": "13/04/2005", "totalSubmission": 91, "submissionSuccess": 89 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 56, "submissionSuccess": 51 },
+      { "date": "13/04/2005", "totalSubmission": 61, "submissionSuccess": 59 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 106,
+        "submissionSuccess": 101
+      },
+      { "date": "13/04/2005", "totalSubmission": 101, "submissionSuccess": 96 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 46, "submissionSuccess": 41 },
+      { "date": "13/04/2005", "totalSubmission": 51, "submissionSuccess": 49 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 71, "submissionSuccess": 66 },
+      { "date": "13/04/2005", "totalSubmission": 76, "submissionSuccess": 73 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 61, "submissionSuccess": 56 },
+      { "date": "13/04/2005", "totalSubmission": 66, "submissionSuccess": 63 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 96, "submissionSuccess": 91 },
+      { "date": "13/04/2005", "totalSubmission": 101, "submissionSuccess": 99 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 41, "submissionSuccess": 36 },
+      { "date": "13/04/2005", "totalSubmission": 46, "submissionSuccess": 43 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 81, "submissionSuccess": 76 },
+      { "date": "13/04/2005", "totalSubmission": 86, "submissionSuccess": 83 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 51, "submissionSuccess": 46 },
+      { "date": "13/04/2005", "totalSubmission": 56, "submissionSuccess": 53 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      {
+        "date": "12/04/2005",
+        "totalSubmission": 106,
+        "submissionSuccess": 101
+      },
+      { "date": "13/04/2005", "totalSubmission": 111, "submissionSuccess": 109 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 36, "submissionSuccess": 31 },
+      { "date": "13/04/2005", "totalSubmission": 41, "submissionSuccess": 39 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 76, "submissionSuccess": 71 },
+      { "date": "13/04/2005", "totalSubmission": 81, "submissionSuccess": 79 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 61, "submissionSuccess": 56 },
+      { "date": "13/04/2005", "totalSubmission": 66, "submissionSuccess": 63 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 84, "submissionSuccess": 83 },
+      { "date": "13/04/2005", "totalSubmission": 85, "submissionSuccess": 84 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 74, "submissionSuccess": 69 },
+      { "date": "13/04/2005", "totalSubmission": 79, "submissionSuccess": 77 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 99, "submissionSuccess": 94 },
+      { "date": "13/04/2005", "totalSubmission": 94, "submissionSuccess": 89 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 64, "submissionSuccess": 59 },
+      { "date": "13/04/2005", "totalSubmission": 69, "submissionSuccess": 67 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 84, "submissionSuccess": 81 },
+      { "date": "13/04/2005", "totalSubmission": 89, "submissionSuccess": 87 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 54, "submissionSuccess": 49 },
+      { "date": "13/04/2005", "totalSubmission": 59, "submissionSuccess": 57 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 104, "submissionSuccess": 99 },
+      { "date": "13/04/2005", "totalSubmission": 99, "submissionSuccess": 94 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 44, "submissionSuccess": 39 },
+      { "date": "13/04/2005", "totalSubmission": 49, "submissionSuccess": 47 }
+    ]
+  },
+  {
+    "customer": "cust1",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 69, "submissionSuccess": 64 },
+      { "date": "13/04/2005", "totalSubmission": 74, "submissionSuccess": 71 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 59, "submissionSuccess": 54 },
+      { "date": "13/04/2005", "totalSubmission": 64, "submissionSuccess": 61 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 94, "submissionSuccess": 89 },
+      { "date": "13/04/2005", "totalSubmission": 99, "submissionSuccess": 97 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup1",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 39, "submissionSuccess": 34 },
+      { "date": "13/04/2005", "totalSubmission": 44, "submissionSuccess": 41 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 79, "submissionSuccess": 74 },
+      { "date": "13/04/2005", "totalSubmission": 84, "submissionSuccess": 81 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 49, "submissionSuccess": 44 },
+      { "date": "13/04/2005", "totalSubmission": 54, "submissionSuccess": 51 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup2",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 104, "submissionSuccess": 99 },
+      { "date": "13/04/2005", "totalSubmission": 109, "submissionSuccess": 107 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest1",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 34, "submissionSuccess": 29 },
+      { "date": "13/04/2005", "totalSubmission": 39, "submissionSuccess": 37 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest2",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 74, "submissionSuccess": 69 },
+      { "date": "13/04/2005", "totalSubmission": 79, "submissionSuccess": 77 }
+    ]
+  },
+  {
+    "customer": "cust2",
+    "supplier": "sup3",
+    "destination": "dest3",
+    "values": [
+      { "date": "12/04/2005", "totalSubmission": 59, "submissionSuccess": 54 },
+      { "date": "13/04/2005", "totalSubmission": 64, "submissionSuccess": 61 }
+    ]
+  }
+]
