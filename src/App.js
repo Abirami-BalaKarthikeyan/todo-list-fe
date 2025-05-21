@@ -10,6 +10,7 @@ const SankeyChart = lazy(() => import("./components/SankeyChart"));
 const StreamChart = lazy(() => import("./components/StreamChart"));
 const PieChart = lazy(() => import("./components/PieChart"));
 const RadialBarChart = lazy(() => import("./components/RadialBarChart"));
+const PolarBarChart = lazy(() => import("./components/PolarBarChart"));
 
 function App() {
   const data = initializeDataJson();
@@ -90,6 +91,15 @@ function App() {
         >
           Radial Bar Chart
         </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "polar" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("polar")}
+        >
+          Polar Bar Chart
+        </button>
+     
       </div>
 
       {/* Chart display */}
@@ -110,6 +120,8 @@ function App() {
         {activeTab === "stream" && <StreamChart data={data} />}
         {activeTab === "pie" && <PieChart data={data} />}
         {activeTab === "radial" && <RadialBarChart data={data} />}
+        {activeTab === "polar" && <PolarBarChart data={data} />}
+     
 
       </Suspense>
     </div>
