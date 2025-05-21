@@ -5,7 +5,7 @@ import { initializeDataJson, initializeDataJson2 } from "./utils/dataGenerator";
 const BarGraph = lazy(() => import("./components/BarGraph"));
 const LineGraph = lazy(() => import("./components/LineGraph"));
 const HeatMap = lazy(() => import("./components/HeatMap"));
-// const TreeMap = lazy(() => import("./components/Treemap"));
+
 
 function App() {
   const data = initializeDataJson();
@@ -45,14 +45,7 @@ function App() {
         >
           Heat Map
         </button>
-         {/* <button
-          className={`px-4 py-2 rounded ${
-            activeTab === "heat" ? "bg-blue-600 text-white" : "bg-gray-200"
-          }`}
-          onClick={() => setActiveTab("treemap")}
-        >
-          Tree Map
-        </button> */}
+       
       </div>
 
       {/* Chart display */}
@@ -68,7 +61,7 @@ function App() {
         {activeTab === "bar" && <BarGraph data={data} />}
         {activeTab === "line" && <LineGraph data={data} />}
         {activeTab === "heat" && <HeatMap data={sampleData} />}
-        {/* {activeTab === "treemap" && <TreeMap data={sampleData} />} */}
+    
       </Suspense>
     </div>
   );
