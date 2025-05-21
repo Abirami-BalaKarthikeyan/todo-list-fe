@@ -1,143 +1,417 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ResponsiveHeatMap } from '@nivo/heatmap';
 
-// Sample data directly from Nivo examples
-const sampleData = [
-  {
-    "id": "Japan",
-    "Jan": 7,
-    "Feb": 20,
-    "Mar": 26,
-    "Apr": 85,
-    "May": 115
-  },
-  {
-    "id": "France",
-    "Jan": 63,
-    "Feb": 71,
-    "Mar": 31,
-    "Apr": 120,
-    "May": 49
-  },
-  {
-    "id": "US",
-    "Jan": 11,
-    "Feb": 110,
-    "Mar": 81,
-    "Apr": 106,
-    "May": 55
-  }
-];
+export default function HeatMap({data}) {
+  const [viewType, setViewType] = useState('totalSubmission');
+  
+  // Parse and transform the uploaded data for better visualization
+  // const rawData = [
+  //   {
+  //       "id": "cust1sup1dest1 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 90
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 142
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 94
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup1dest1 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 82
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 137
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 83
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup1dest2 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 81
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 67
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 86
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup1dest2 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 71
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 63
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 75
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup2dest1 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 121
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 68
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 123
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup2dest1 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 120
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 67
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 117
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup2dest2 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 113
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 133
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 110
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust1sup2dest2 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 104
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 130
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 107
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup1dest1 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 67
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 76
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 104
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup1dest1 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 64
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 64
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 91
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup1dest2 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 98
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 125
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 97
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup1dest2 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 94
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 117
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 85
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup2dest1 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 115
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 55
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 56
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup2dest1 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 103
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 50
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 50
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup2dest2 - totalSubmission",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 67
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 133
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 146
+  //           }
+  //       ]
+  //   },
+  //   {
+  //       "id": "cust2sup2dest2 - submissionSuccess",
+  //       "data": [
+  //           {
+  //               "x": "01/04/2023",
+  //               "y": 60
+  //           },
+  //           {
+  //               "x": "15/04/2023",
+  //               "y": 123
+  //           },
+  //           {
+  //               "x": "01/05/2023",
+  //               "y": 126
+  //           }
+  //       ]
+  //   }
+  // ];
 
-const HeatMap = ({ data }) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [processedData, setProcessedData] = useState(null);
-  const [keys, setKeys] = useState([]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      try {
-        if (data && data.length > 0) {
-          // Extract unique dates
-          const allDates = new Set();
-          data.forEach(series => {
-            series.data.forEach(point => {
-              allDates.add(point.x);
-            });
-          });
-          const sortedDates = Array.from(allDates).sort();
-          
-          // Create data in the format expected by Nivo
-          const heatmapData = data.map(series => {
-            const row = { id: series.id };
-            
-            // Initialize all dates with zero values
-            sortedDates.forEach(date => {
-              row[date] = 0;
-            });
-            
-            // Fill in actual values
-            series.data.forEach(point => {
-              row[point.x] = point.y;
-            });
-            
-            return row;
-          });
-          
-          console.log("Processed data:", heatmapData);
-          console.log("Keys:", sortedDates);
-          
-          setProcessedData(heatmapData);
-          setKeys(sortedDates);
-        } else {
-          // Use sample data as fallback
-          console.log("Using sample data");
-          setProcessedData(sampleData);
-          setKeys(["Jan", "Feb", "Mar", "Apr", "May"]);
-        }
-      } catch (error) {
-        console.error("Error processing data:", error);
-        // Use sample data as fallback
-        setProcessedData(sampleData);
-        setKeys(["Jan", "Feb", "Mar", "Apr", "May"]);
-      }
+  // Function to transform data into heatmap format
+  const transformData = (type) => {
+    // Get unique combinations of customer, supplier, destination
+    const combinations = Array.from(new Set(data.map(item => {
+      const parts = item.id.split(' - ')[0];
+      return parts;
+    })));
+    
+    // Get unique dates
+    const dates = Array.from(new Set(data.flatMap(item => 
+      item.data.map(d => d.x)
+    )));
+    
+    // Create transformed data for heatmap
+    return combinations.map(combo => {
+      const relevantData = data.find(item => 
+        item.id === `${combo} - ${type}`
+      );
       
-      setIsLoading(false);
-    }, 1000);
+      return {
+        id: combo,
+        data: dates.map(date => {
+          const dataPoint = relevantData?.data.find(d => d.x === date);
+          return {
+            x: date,
+            y: dataPoint ? dataPoint.y : 0
+          };
+        })
+      };
+    });
+  };
 
-    return () => clearTimeout(timer);
-  }, [data]);
+  const heatmapData = transformData(viewType);
 
-  if (isLoading) {
-    return (
-      <div className="w-full p-4 bg-white rounded-lg shadow-md">
-        <div className="flex justify-center items-center h-64">
-          <p className="text-gray-500">Processing chart data...</p>
-        </div>
-      </div>
-    );
-  }
+  console.log("heatmapData", heatmapData);
+  
+  // Find min and max values for color scale
+  const allValues = heatmapData.flatMap(item => 
+    item.data.map(d => d.y)
+  );
+  const minValue = Math.min(...allValues);
+  const maxValue = Math.max(...allValues);
 
   return (
-    <div className="w-full p-4 bg-white rounded-lg shadow-md">
-      <div style={{ height: '400px' }}>
+    <div className="flex flex-col items-center w-full">
+      <div className="mb-4 flex items-center">
+        <label htmlFor="viewType" className="mr-2 text-gray-700 font-medium">
+          View:
+        </label>
+        <select 
+          id="viewType" 
+          value={viewType} 
+          onChange={(e) => setViewType(e.target.value)}
+          className="p-2 border border-gray-300 rounded"
+        >
+          <option value="totalSubmission">Total Submissions</option>
+          <option value="submissionSuccess">Successful Submissions</option>
+        </select>
+      </div>
+      
+      <div className="w-full h-96">
         <ResponsiveHeatMap
-          data={ sampleData}
-          keys={keys.length > 0 ? keys : ["Jan", "Feb", "Mar", "Apr", "May"]}
-          indexBy="id"
-          margin={{ top: 50, right: 60, bottom: 60, left: 120 }}
-          forceSquare={false}
+          data={heatmapData}
+          margin={{ top: 60, right: 90, bottom: 60, left: 90 }}
           axisTop={{
             tickSize: 5,
             tickPadding: 5,
             tickRotation: -45,
-            legend: 'Date',
-            legendOffset: 36
+            legend: "Dates",
+            legendOffset: 40
+          }}
+          axisRight={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: "Combinations",
+            legendPosition: "middle",
+            legendOffset: 80
           }}
           axisLeft={{
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            legend: 'Series',
-            legendPosition: 'middle',
+            legend: "Combinations",
+            legendPosition: "middle",
             legendOffset: -80
           }}
           colors={{
-            type: 'sequential',
-            scheme: 'blues'
+            type: "sequential",
+            scheme: "reds",
+            minValue: minValue,
+            maxValue: maxValue
           }}
-          emptyColor="#eeeeee"
-          cellOpacity={1}
-          cellBorderColor={{ from: 'color', modifiers: [['darker', 0.4]] }}
-          labelTextColor={{ from: 'color', modifiers: [['darker', 1.8]] }}
+          emptyColor="#ffffff"
+          borderColor={{ from: 'color', modifiers: [['darker', 0.4]] }}
+          legends={[
+            {
+              anchor: 'bottom',
+              translateX: 0,
+              translateY: 30,
+              length: 400,
+              thickness: 8,
+              direction: 'row',
+              tickPosition: 'after',
+              tickSize: 3,
+              tickSpacing: 4,
+              tickOverlap: false,
+              tickFormat: '>-.2f',
+              title: 'Value →',
+              titleAlign: 'start',
+              titleOffset: 4
+            }
+          ]}
+          annotations={[
+            {
+              type: 'rect',
+              match: { id: 'US', value: 'Apr' },
+              noteX: 0,
+              noteY: -25,
+              noteWidth: 120,
+              noteHeight: 20,
+              noteTextOffset: 5,
+              noteBorderRadius: 4,
+              noteBackgroundColor: 'rgba(255, 255, 255, 0.8)',
+              noteBorderColor: 'rgba(0, 0, 0, 0.5)',
+              note: 'Highlighted cell'
+            }
+          ]}
           hoverTarget="cell"
           cellHoverOthersOpacity={0.25}
         />
       </div>
     </div>
   );
-};
-
-export default HeatMap;
-
-
+}
