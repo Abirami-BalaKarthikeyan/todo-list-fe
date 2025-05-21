@@ -1,71 +1,64 @@
-import React, { useState, useEffect } from "react";
-import TodoCard from "./component/TodoCard";
-import { useQuery } from "react-query";
-import { getTodoList } from "./lib/todoList-api";
-import { Button } from "@mui/material";
-import AddIcon from "./assests/add.png";
-import EditDialog from "./component/EditDialog";
+import React, { Suspense, lazy, useState } from "react";
+import { initializeDataJson } from "./utils/dataGenerator";
+
+// Lazy load the components
+const BarGraph = lazy(() => import("./components/BarGraph"));
+const LineGraph = lazy(() => import("./components/LineGraph"));
+const HeatMap = lazy(() => import("./components/HeatMap"));
 
 function App() {
-  const [todos, setTodo] = useState([]);
-  const [openDialog, setOpenDialog] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const { refetch } = useQuery("todoList", getTodoList, {
-    onSuccess: ({ data }) => {
-      setTodo(data);
-    },
-  });
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const data = initializeDataJson();
+  const [activeTab, setActiveTab] = useState("bar"); // 'bar', 'line', or 'heat'
+  console.log("Data:", data);
 
   return (
-    <div className="container mx-auto  bg-red-100 min-h-screen">
-      <div
-        className={`flex justify-between items-center p-4 mb-8 bg-red-100 sticky top-0 z-10 transition-shadow ${
-          isScrolled ? "shadow-lg" : ""
-        }`}
-      >
-        <div className="text-3xl font-bold text-pink-800 flex-grow italic">
-          To-do List
-        </div>
-        <Button
-          type="submit"
-          variant="contained"
-          className="w-[200px] h-12 text-xs"
-          sx={{
-            backgroundColor: "#fffdaf",
-            color: "#9d174d",
-            "&:hover": {
-              backgroundColor: "#fffd8d",
-            },
-            whiteSpace: "nowrap",
-          }}
-          onClick={() => setOpenDialog(true)}
+    <div className="p-4">
+      <h1 className="text-2xl font-bold text-center mb-4">
+        Data Visualization Dashboard
+      </h1>
+
+      {/* Tabs */}
+      <div className="flex justify-center space-x-4 mb-6">
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "bar" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("bar")}
         >
-          Add new task !!
-          <img src={AddIcon} alt="Add" className="ml-2 w-8 h-8" />
-        </Button>
+          Bar Graph
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "line" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("line")}
+        >
+          Line Graph
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "heat" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("heat")}
+        >
+          Heat Map
+        </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-        {todos.map((todo) => (
-          <TodoCard
-            key={todo.id}
-            title={todo.title}
-            description={todo.description}
-            status={todo.status}
-            id={todo.id}
-            refetch={refetch}
-          />
-        ))}
-      </div>
-      <EditDialog open={openDialog} onClose={() => setOpenDialog(false)} />
+
+      {/* Chart display */}
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center h-64">
+            <div className="text-xl text-gray-600">
+              Loading chart component...
+            </div>
+          </div>
+        }
+      >
+        {activeTab === "bar" && <BarGraph data={data} />}
+        {activeTab === "line" && <LineGraph data={data} />}
+        {activeTab === "heat" && <HeatMap data={data} />}
+      </Suspense>
     </div>
   );
 }
