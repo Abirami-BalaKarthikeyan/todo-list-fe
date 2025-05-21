@@ -5,13 +5,16 @@ import { initializeDataJson, initializeDataJson2 } from "./utils/dataGenerator";
 const BarGraph = lazy(() => import("./components/BarGraph"));
 const LineGraph = lazy(() => import("./components/LineGraph"));
 const HeatMap = lazy(() => import("./components/HeatMap"));
-
+const ScatterPlot = lazy(() => import("./components/ScatterPlot"));
+const SankeyChart = lazy(() => import("./components/SankeyChart"));
+const StreamChart = lazy(() => import("./components/StreamChart"));
+const PieChart = lazy(() => import("./components/PieChart"));
+const RadialBarChart = lazy(() => import("./components/RadialBarChart"));
 
 function App() {
   const data = initializeDataJson();
   const sampleData = initializeDataJson2();
   const [activeTab, setActiveTab] = useState("bar"); // 'bar', 'line', or 'heat'
-  console.log("Data:", data);
 
   return (
     <div className="p-4">
@@ -45,7 +48,48 @@ function App() {
         >
           Heat Map
         </button>
-       
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "scatter" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("scatter")}
+        >
+          Scatter Plot
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "sankey" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("sankey")}
+        >
+          Sankey Chart
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "stream" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("stream")}
+        >
+          Stream Chart
+        </button>
+
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "pie" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("pie")}
+        >
+          Pie Chart
+        </button>
+     
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "radial" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("radial")}
+        >
+          Radial Bar Chart
+        </button>
       </div>
 
       {/* Chart display */}
@@ -61,7 +105,12 @@ function App() {
         {activeTab === "bar" && <BarGraph data={data} />}
         {activeTab === "line" && <LineGraph data={data} />}
         {activeTab === "heat" && <HeatMap data={sampleData} />}
-    
+        {activeTab === "scatter" && <ScatterPlot data={data} />}
+        {activeTab === "sankey" && <SankeyChart data={data} />}
+        {activeTab === "stream" && <StreamChart data={data} />}
+        {activeTab === "pie" && <PieChart data={data} />}
+        {activeTab === "radial" && <RadialBarChart data={data} />}
+
       </Suspense>
     </div>
   );
