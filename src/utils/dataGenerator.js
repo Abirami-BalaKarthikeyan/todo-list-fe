@@ -19,9 +19,9 @@ export function initializeDataJson() {
   //   "25/06/2023",
   // ];
 
-  const customers = ["cust1", "cust2"];
-  const suppliers = ["sup1", "sup2"];
-  const destinations = ["dest1", "dest2"];
+  const customers = ["cust1", "cust2","cust3"];
+  const suppliers = ["sup1", "sup2","sup3"];
+  const destinations = ["dest1", "dest2","dest3"];
 
   const dates = ["01/04/2023", "15/04/2023", "01/05/2023"];
   // Define five specific dates
