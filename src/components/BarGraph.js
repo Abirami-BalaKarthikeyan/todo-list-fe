@@ -142,10 +142,10 @@ function BarGraph() {
           borderColor={{ from: "color", modifiers: [["darker", 1.6]] }} 
           axisBottom={{ 
             tickRotation: -45, 
-            legend: "Customer-Bind-Supplier-Operator", 
+           legend: "Customer-Bind-Supplier-Operator", 
             legendPosition: "middle", 
             legendOffset: 70,
-            format: (label) => trimLabel(label, 20),
+            format: (label) => trimLabel(label, 8),
             tickSize: 5,
             tickPadding: 8,
             tickValues: filteredData.length > 10 

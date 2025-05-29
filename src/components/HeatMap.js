@@ -76,29 +76,27 @@ const DynamicHeatmap = () => {
   const ColorLegend = () => {
     const steps = 8;
     const stepSize = (maxValue - minValue) / (steps - 1);
-
+    
     // Generate color scale values
     const legendItems = Array.from({ length: steps }, (_, i) => {
-      const value = minValue + stepSize * i;
+      const value = minValue + (stepSize * i);
       return {
         value: Math.round(value),
-        intensity: i / (steps - 1),
+        intensity: i / (steps - 1)
       };
     });
 
     // Red color scale similar to Nivo's 'reds' scheme
     const getRedColor = (intensity) => {
       const baseRed = 255;
-      const baseGreen = Math.round(245 - intensity * 200); // From light to dark
-      const baseBlue = Math.round(238 - intensity * 200);
+      const baseGreen = Math.round(245 - (intensity * 200)); // From light to dark
+      const baseBlue = Math.round(238 - (intensity * 200));
       return `rgb(${baseRed}, ${baseGreen}, ${baseBlue})`;
     };
 
     return (
       <div className="bg-white rounded-lg shadow-sm p-4 mb-4">
-        <h3 className="text-sm font-semibold text-gray-700 mb-3">
-          Color Scale
-        </h3>
+        <h3 className="text-sm font-semibold text-gray-700 mb-3">Color Scale</h3>
         <div className="flex items-center space-x-2">
           <span className="text-xs text-gray-500 mr-2">Low</span>
           <div className="flex">
@@ -107,10 +105,10 @@ const DynamicHeatmap = () => {
                 key={index}
                 className="relative group"
                 style={{
-                  width: "24px",
-                  height: "20px",
+                  width: '24px',
+                  height: '20px',
                   backgroundColor: getRedColor(item.intensity),
-                  border: "1px solid rgba(0,0,0,0.1)",
+                  border: '1px solid rgba(0,0,0,0.1)'
                 }}
               >
                 {/* Tooltip on hover */}
