@@ -49,16 +49,7 @@ function App() {
         >
           Heat Map
         </button>
-        <button
-          className={`px-4 py-2 rounded ${
-            activeTab === "scatter" ? "bg-blue-600 text-white" : "bg-gray-200"
-          }`}
-          onClick={() => setActiveTab("scatter")}
-        >
-          Scatter Plot
-        </button>
-      
-      
+
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "pie" ? "bg-blue-600 text-white" : "bg-gray-200"
@@ -67,7 +58,7 @@ function App() {
         >
           Pie Chart
         </button>
-     
+
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "radial" ? "bg-blue-600 text-white" : "bg-gray-200"
@@ -84,7 +75,7 @@ function App() {
         >
           Polar Bar Chart
         </button>
-     
+
       </div>
 
       {/* Chart display */}
@@ -104,9 +95,9 @@ function App() {
         {activeTab === "sankey" && <SankeyChart data={data} />}
         {activeTab === "stream" && <StreamChart data={data} />}
         {activeTab === "pie" && <PieChart data={data} />}
-        {activeTab === "radial" && <RadialBarChart data={data} />}
-        {activeTab === "polar" && <PolarBarChart data={data} />}
-     
+        {activeTab === "radial" && <RadialBarChart />}
+        {activeTab === "polar" && <PolarBarChart />}
+
 
       </Suspense>
     </div>
