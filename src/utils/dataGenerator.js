@@ -19,9 +19,9 @@ export function initializeDataJson() {
   //   "25/06/2023",
   // ];
 
-  const customers = ["cust1", "cust2","cust3"];
-  const suppliers = ["sup1", "sup2","sup3"];
-  const destinations = ["dest1", "dest2","dest3"];
+  const customers = ["cust1", "cust2"];
+  const suppliers = ["sup1", "sup2"];
+  const destinations = ["dest1", "dest2"];
 
   const dates = ["01/04/2023", "15/04/2023", "01/05/2023"];
   // Define five specific dates
@@ -107,15 +107,15 @@ export function initializeDataJson2() {
     },
     cust1sup2dest1: {
       total: [121, 68, 123, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20],
-      success:[81, 67, 86, 75, 65, 55, 45, 35, 25, 15, 5, 0],
+      success: [81, 67, 86, 75, 65, 55, 45, 35, 25, 15, 5, 0],
     },
     cust1sup2dest2: {
       total: [113, 133, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10],
-      success:[67, 76, 104, 90, 80, 70, 60, 50, 40, 30, 20, 10],
+      success: [67, 76, 104, 90, 80, 70, 60, 50, 40, 30, 20, 10],
     },
     cust2sup1dest1: {
       total: [67, 76, 104, 90, 80, 70, 60, 50, 40, 30, 20, 10],
-      success:[113, 133, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10],
+      success: [113, 133, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10],
     },
     cust2sup1dest2: {
       total: [98, 125, 97, 85, 75, 65, 55, 45, 35, 25, 15, 5, 0],

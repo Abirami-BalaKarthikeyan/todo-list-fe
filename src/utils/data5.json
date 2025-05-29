@@ -1,0 +1,1121 @@
+{
+  "data": {
+    "x_axis": [
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Intergo Wholesale (Onboarding)-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-G5 Telekom Telekomimikasyon Limited Sirketi-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-CELTEL TCHAD S.A-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Pai Telecommunications Limited-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Telecel Global Limited-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-GCN Global Communications Networks LLC-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Celtel Congo RDC Sarl-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Robi Axiata Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-SAP Asia Pte. ltd-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Orange-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Identidad Advertising Development LLC-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-GO4Mobility-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-0-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Ventatel Limited-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-SAP France S.A.-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Lexico Telecom Limited-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Bharti Airtel Ltd (EGB)-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Lam36-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Globahub AG-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-DEXATEL OU(SMS) (Onboarding)-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Baway LLC-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Texcell Messaging Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Gupshup INC-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-M800 Limited-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-SMS Highway Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Belgacom International Carrier Services-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Lleidanetworks Serviceis Telematics S.A-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-TaiwanMobile-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-OMANTEL INTERNATIONAL-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Sinch-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Test MB-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-BUC Mobile Inc-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-SAMA Telecom limited-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-IT-Decision-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Ocean 456 Sara 789 Tango 123 Echo 567 Delta 890 An-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Falcon (Onboarding)-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Globe Teleservices Pte Limited-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Speedflow Communications-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Acmetel_DOM-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-PaaSoo Technology Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Bharti Airtel Lanka Pvt. Ltd-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Axis Convergence Inc-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Figensoft-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Airtel Srilanka-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-AVYS WHOLESALE LDA-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-A2P_India_CS-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Voicetec Sys Ltd-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Emirates Communications Corporation-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Tyntec Limited-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-HUB push-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Hayo Telecom Inc-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Airtel Gabon-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-SAP Asia Pte. ltd-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Airtel Ghana-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-MailBIT-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Reliance Jio Infocomm Limited-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Valuefirst Technologies LLC-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Route Mobile (Onboarding)-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Falcon Info Systems FZE LLC-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-0-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Global Track Limited (UK)-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Mr. Messaging (Onboarding)-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Ekato Telecom-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Telq 2way-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Route Mobile (UK) Limited-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Pai Telecommunications Limited-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Pinnacle (Onboarding)-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Novanet Inc-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Grifinum s.r.o-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Protel S.A.L-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Innovative Telecom LLC-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Wirepick Inc-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-IPVOIP S.r.o-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Oman Telecommunications Company S.A.O.G-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Airtel Uganda Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-NX Communications Pte Ltd (Onboarding)-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-CELTEL TCHAD S.A-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Javna International FZC-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Bharti Airtel Lanka Pvt. Ltd-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Teo Global Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Reliance Jio Infocomm Limited-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-ADA Asia (Onboarding)-1049"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Deutsche Telekom AG-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-0-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-CLX Networks AB-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Airtel_Africa_A-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-China Unicom (Onboarding)-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Airtel Seychelles-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-0-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Axistel FZE-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Tata Teleservices Limited-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Novanet Inc-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-0-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Telintel Ltd-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-IBASIS (Onboarding)-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Tmobs (Onboarding)-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-MailBIT-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-JT Global (Onboarding)-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-BT-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Route Mobile (Onboarding)-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Airtel_India_MMS-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Bharti Airtel Lanka Pvt. Ltd-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-SabbirCompany90-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Reach Interactive-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Facebook Inc (IND)-10196"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Airtel Republic of Congo-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-China Unicom (Onboarding)-10217"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Syniverse Technology-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Falcon Info Systems FZE LLC-Maxis Communication BHD Malaysia"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Airtel Kenya-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Vodaofne Dummy-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Wiratel LLC-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-0-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo P2P_CS-Dial Technologies S.A.-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-A.A. Smartcomtech USA LLC-SmartCOMA2P-Airtel Uganda Limited-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Belgacom International Carrier Services-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Telq 2way-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-8x8 UK Limited-8x8_1_A2P_CS-Voicetec Sys Ltd-Hutchison Macau"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-Smart Tech Messaging PTE LTD-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Silverstone Telecom Services Ltd-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-12WE OPEW-Rv_12WEOPEW_HQ_SMPP_A2P_C_0-0-0"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-Tanla Mobile-Vodafone Italy"
+      },
+      {
+        "timestamp-customer_name-customer_bind-supplier-destination_operator_name": "5/28/2025 0:00-NEXMO INC-Nexmo A2P_CS_PM-0-10196"
+      }
+    ],
+    "y_axis": [
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 1,
+        "count_successful_delivery_final": -1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 3,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 0,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 2,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 1,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 1
+      },
+      {
+        "total_submissions": 1,
+        "sum(submission_success)": 0,
+        "sum(delivery_failure_count_final)": 0,
+        "count_successful_delivery_final": 0
+      }
+    ]
+  },
+  "Y-Axis": [
+    "total_submissions",
+    "sum(submission_success)",
+    "sum(delivery_failure_count_final)",
+    "count_successful_delivery_final"
+  ]
+}

@@ -1,204 +1,247 @@
-import React, { useState, useEffect } from "react";
-import { ResponsiveLine } from "@nivo/line";
+import React, { useState } from "react"; 
+import { ResponsiveLine } from "@nivo/line"; 
+import data from "../utils/data5.json"; 
+import { 
+  Box, 
+  Select, 
+  MenuItem, 
+  FormControl, 
+  InputLabel, 
+  Chip,
+  Tooltip,
+  Typography
+} from "@mui/material"; 
 
-const LineGraph = ({ data }) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [chartData, setChartData] = useState([]);
-  const [selectedSeries, setSelectedSeries] = useState(null);
+function LineChart() { 
+  // Prepare the graph data 
+  const graphData = data.data.x_axis.map((x, index) => { 
+    const key = Object.keys(x)[0]; 
+    return { 
+      label: x[key], 
+      ...data.data.y_axis[index], 
+    }; 
+  }); 
 
-  useEffect(() => {
-    // Process data for line chart format
-    const timer = setTimeout(() => {
-      if (data && data.length > 0) {
-        // Transform data to the format expected by ResponsiveLine
-        const lineData = data.map((series) => ({
-          id: series.id,
-          data: series.data.map((point) => ({
-            x: point.x,
-            y: point.y,
-          })),
-        }));
+  const keys = Object.keys(data.data.y_axis[0] || {}); 
+  const allLabels = graphData.map((item) => item.label); 
 
-        setChartData(lineData);
-      }
-      setIsLoading(false);
-    }, 1000);
+  // State to store selected labels (array for multiselect)
+  const [selectedLabels, setSelectedLabels] = useState([]); 
 
-    return () => clearTimeout(timer);
-  }, [data]);
+  // Filtered data based on dropdown 
+  const filteredData = selectedLabels.length > 0
+    ? graphData.filter((item) => selectedLabels.includes(item.label)) 
+    : graphData; 
 
-  // Handle series click
-  const handleSeriesClick = (seriesId) => {
-    setSelectedSeries(selectedSeries === seriesId ? null : seriesId);
+  // Function to truncate dropdown values
+  const trimDropdownValue = (value, maxLength = 20) =>
+    value.length > maxLength ? `${value.slice(0, maxLength)}...` : value;
+
+  // Handle multiselect change
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setSelectedLabels(typeof value === 'string' ? value.split(',') : value);
   };
 
-  // Filter data based on selected series
-  const getFilteredData = () => {
-    let filteredData = chartData;
-
-    // Filter by series if selected
-    if (selectedSeries) {
-      filteredData = filteredData.filter(
-        (series) => series.id === selectedSeries
-      );
-    }
-
-    return filteredData;
+  // Custom render function for selected values
+  const renderSelectedValues = (selected) => {
+    if (selected.length === 0) return '';
+    if (selected.length === 1) return trimDropdownValue(selected[0]);
+    return `${selected.length} items selected`;
   };
 
-  if (isLoading) {
-    return (
-      <div className="w-full p-4 bg-white rounded-lg shadow-md">
-        <div className="flex justify-center items-center h-64">
-          <p className="text-gray-500">Processing chart data...</p>
-        </div>
-      </div>
-    );
-  }
+  // Dynamic tick spacing based on data length
+  const getTickInterval = (dataLength) => {
+    if (dataLength <= 10) return 1; // Show all ticks
+    if (dataLength <= 20) return 2; // Show every 2nd tick
+    if (dataLength <= 50) return Math.ceil(dataLength / 10); // Show ~10 ticks
+    return Math.ceil(dataLength / 20); // Show ~8 ticks for large datasets
+  };
 
-  // Extract all unique series IDs
-  const seriesIds = chartData.map((series) => series.id);
+  // Transform data for Line chart format
+  const lineData = keys.map((key) => ({
+    id: key,
+    data: filteredData.map((item, index) => ({
+      x: index, // Use index for x-axis positioning
+      y: item[key] || 0,
+      label: item.label // Store full label for tooltip
+    }))
+  }));
 
-  console.log("chartData", chartData);
+  const tickInterval = getTickInterval(filteredData.length);
 
-  return (
-    <div className="w-full p-4 bg-white rounded-lg shadow-md">
-      {/* Series selector */}
-      <div className="mb-4 flex flex-wrap gap-2 justify-center">
-        {seriesIds.map((id) => (
-          <button
-            key={id}
-            onClick={() => handleSeriesClick(id)}
-            className={`px-3 py-1 rounded-md text-sm ${
-              selectedSeries === id
-                ? "bg-green-600 text-white"
-                : "bg-gray-200 hover:bg-gray-300"
-            }`}
-          >
-            {id}
-          </button>
-        ))}
-        {selectedSeries && (
-          <button
-            onClick={() => setSelectedSeries(null)}
-            className="px-3 py-1 rounded-md text-sm bg-red-500 text-white"
-          >
-            Show All Series
-          </button>
-        )}
-      </div>
-
-      {chartData.length > 0 ? (
-        <div style={{ height: "400px" }}>
-          <ResponsiveLine
-            data={getFilteredData()}
-            margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-            xScale={{ type: "point" }}
-            yScale={{
-              type: "linear",
-              min: "auto",
-              max: "auto",
-              stacked: false,
-              reverse: false,
-            }}
-            axisTop={null}
-            axisRight={null}
-            axisBottom={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: -45,
-              legend: "Date",
-              legendOffset: 40,
-              legendPosition: "middle",
-            }}
-            axisLeft={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: "Count",
-              legendOffset: -40,
-              legendPosition: "middle",
-            }}
-            colors={{ scheme: "category10" }}
-            pointSize={10}
-            pointColor={{ theme: "background" }}
-            pointBorderWidth={2}
-            pointBorderColor={{ from: "serieColor" }}
-            pointLabelYOffset={-12}
-            useMesh={true}
-            legends={[
-              {
-                anchor: "bottom-right",
-                direction: "column",
-                justify: false,
-                translateX: 120,
-                translateY: 0,
-                itemsSpacing: 2,
-                itemWidth: 100,
-                itemHeight: 20,
-                itemDirection: "left-to-right",
-                itemOpacity: 0.85,
-                symbolSize: 20,
-                effects: [
-                  {
-                    on: "hover",
-                    style: {
-                      itemOpacity: 1,
-                    },
-                  },
-                ],
-                onClick: (data) => handleSeriesClick(data.id),
+  return ( 
+    <div style={{ padding: 20 }}> 
+      {/* Multiselect Dropdown to filter */} 
+      <Box mb={2} width={400}> 
+        <FormControl fullWidth> 
+          <InputLabel>Select Combinations</InputLabel> 
+          <Select 
+            multiple
+            value={selectedLabels} 
+            label="Select Combinations" 
+            onChange={handleChange}
+            renderValue={renderSelectedValues}
+            MenuProps={{
+              PaperProps: {
+                style: {
+                  maxHeight: 300,
+                  width: 400,
+                },
               },
-            ]}
-            animate={true}
-            enableSlices="x"
-            sliceTooltip={({ slice }) => {
-              return (
-                <div
-                  style={{
-                    background: "white",
-                    padding: "9px 12px",
-                    border: "1px solid #ccc",
-                  }}
-                >
-                  <div style={{ marginBottom: "5px" }}>
-                    {slice.points[0].data.x}
-                  </div>
-                  {slice.points.map((point) => (
-                    <div
-                      key={point.id}
-                      style={{
-                        color: point.serieColor,
-                        padding: "3px 0",
-                        display: "flex",
-                        alignItems: "center",
+            }}
+          > 
+            {allLabels.map((label, index) => ( 
+              <MenuItem key={index} value={label}> 
+                {label.length > 20 ? (
+                  <Tooltip title={label} arrow placement="right">
+                    <Typography
+                      component="span"
+                      sx={{ 
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                        display: 'block',
+                        maxWidth: '100%'
                       }}
                     >
-                      <div
-                        style={{
-                          width: "12px",
-                          height: "12px",
-                          background: point.serieColor,
-                          marginRight: "8px",
-                        }}
-                      ></div>
-                      <span>
-                        {point.serieId}: {point.data.y}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              );
-            }}
-          />
-        </div>
-      ) : (
-        <div className="flex justify-center items-center h-64">
-          <p className="text-gray-500">No data available</p>
-        </div>
-      )}
-    </div>
-  );
-};
+                      {trimDropdownValue(label)}
+                    </Typography>
+                  </Tooltip>
+                ) : (
+                  label
+                )}
+              </MenuItem> 
+            ))} 
+          </Select> 
+        </FormControl> 
+      </Box> 
 
-export default LineGraph;
+      {/* Display selected items as chips */}
+      {selectedLabels.length > 0 && (
+        <Box mb={2} display="flex" flexWrap="wrap" gap={1}>
+          {selectedLabels.map((label, index) => (
+            <Chip
+              key={index}
+              label={trimDropdownValue(label, 30)}
+              onDelete={() => {
+                setSelectedLabels(prev => prev.filter(item => item !== label));
+              }}
+              size="small"
+              variant="outlined"
+              title={label} // Native tooltip for chips
+            />
+          ))}
+          <Chip
+            label="Clear All"
+            onClick={() => setSelectedLabels([])}
+            size="small"
+            variant="outlined"
+            color="secondary"
+            style={{ marginLeft: 8 }}
+          />
+        </Box>
+      )}
+
+      {/* Line Chart */} 
+      <div style={{ height: 500 }}> 
+        <ResponsiveLine
+          data={lineData}
+          margin={{ top: 50, right: 130, bottom: 120, left: 60 }}
+          xScale={{ type: 'point' }}
+          yScale={{
+            type: 'linear',
+            min: 'auto',
+            max: 'auto',
+            stacked: false,
+            reverse: false
+          }}
+          yFormat=" >-.2f"
+          axisTop={null}
+          axisRight={null}
+          axisBottom={{
+            tickSize: 5,
+            tickPadding: 8,
+            tickRotation: -45,
+            legend: 'Customer-Bind-Supplier-Operator',
+            legendOffset: 70,
+            legendPosition: 'middle',
+            // Dynamic tick values - only show subset of ticks
+            tickValues: filteredData.map((_, index) => index).filter((_, index) => index % tickInterval === 0),
+            format: (value) => {
+              // Get the label for this index
+              const item = filteredData[value];
+              const label = item ? item.label : '';
+              // Reduce character limit for crowded x-axis
+              const charLimit = filteredData.length > 20 ? 6 : 8;
+              return label.length > charLimit ? `${label.slice(0, charLimit)}...` : label;
+            }
+          }}
+          axisLeft={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'Count',
+            legendOffset: -40,
+            legendPosition: 'middle'
+          }}
+          pointSize={6}
+          pointColor={{ theme: 'background' }}
+          pointBorderWidth={2}
+          pointBorderColor={{ from: 'serieColor' }}
+          pointLabelYOffset={-12}
+          useMesh={true}
+          colors={{ scheme: 'category10' }}
+          legends={[
+            {
+              anchor: 'bottom-right',
+              direction: 'column',
+              justify: false,
+              translateX: 120,
+              translateY: 0,
+              itemsSpacing: 0,
+              itemDirection: 'left-to-right',
+              itemWidth: 100,
+              itemHeight: 20,
+              itemOpacity: 0.75,
+              symbolSize: 12,
+              symbolShape: 'circle',
+              symbolBorderColor: 'rgba(0, 0, 0, .5)',
+              effects: [
+                {
+                  on: 'hover',
+                  style: {
+                    itemBackground: 'rgba(0, 0, 0, .03)',
+                    itemOpacity: 1
+                  }
+                }
+              ]
+            }
+          ]}
+          tooltip={({ point }) => (
+            <div
+              style={{
+                background: 'white',
+                padding: '9px 12px',
+                border: '1px solid #ccc',
+                borderRadius: '4px',
+                fontSize: '12px'
+              }}
+            >
+              <div><strong>{point.data.label}</strong></div>
+              <div>
+                <span style={{ color: point.serieColor }}>●</span>
+                {' '}{point.serieId}: {point.data.yFormatted}
+              </div>
+            </div>
+          )}
+          animate={true}
+          motionStiffness={90}
+          motionDamping={15}
+        />
+      </div> 
+    </div> 
+  ); 
+} 
+
+export default LineChart;

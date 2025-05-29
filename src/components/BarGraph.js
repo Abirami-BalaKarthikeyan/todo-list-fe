@@ -1,167 +1,196 @@
-import React, { useState, useEffect } from 'react';
-import { ResponsiveBar } from '@nivo/bar';
+import React, { useState } from "react"; 
+import { ResponsiveBar } from "@nivo/bar"; 
+import data from "../utils/data5.json"; 
+import { 
+  Box, 
+  Select, 
+  MenuItem, 
+  FormControl, 
+  InputLabel, 
+  Chip,
+  Tooltip,
+  Typography
+} from "@mui/material"; 
 
-const BarGraph = ({ data }) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [chartData, setChartData] = useState({ barData: [], keys: [], dates: [] });
-  const [selectedDate, setSelectedDate] = useState(null);
+function BarGraph() { 
+  // Prepare the graph data 
+  const graphData = data.data.x_axis.map((x, index) => { 
+    const key = Object.keys(x)[0]; 
+    return { 
+      label: x[key], 
+      ...data.data.y_axis[index], 
+    }; 
+  }); 
 
-  useEffect(() => {
-    // Process data
-    const timer = setTimeout(() => {
-      if (data && data.length > 0) {
-        // Extract unique x values (dates) from the data
-        const allDates = new Set();
-        data.forEach(series => {
-          series.data.forEach(point => {
-            allDates.add(point.x);
-          });
-        });
-        const dates = Array.from(allDates);
-        
-        // Prepare data for bar chart
-        const barData = dates.map(date => {
-          const dataPoint = { date };
-          
-          data.forEach(series => {
-            const point = series.data.find(p => p.x === date);
-            if (point) {
-              dataPoint[series.id] = point.y;
-            }
-          });
-          
-          return dataPoint;
-        });
+  const keys = Object.keys(data.data.y_axis[0] || {}); 
+  const allLabels = graphData.map((item) => item.label); 
 
-        setChartData({
-          barData,
-          keys: data.map(series => series.id),
-          dates
-        });
-      }
-      setIsLoading(false);
-    }, 1000);
+  // State to store selected labels (array for multiselect)
+  const [selectedLabels, setSelectedLabels] = useState([]); 
 
-    return () => clearTimeout(timer);
-  }, [data]);
+  // Filtered data based on dropdown 
+  const filteredData = selectedLabels.length > 0
+    ? graphData.filter((item) => selectedLabels.includes(item.label)) 
+    : graphData; 
 
-  // Handle date click
-  const handleDateClick = (date) => {
-    setSelectedDate(selectedDate === date ? null : date);
+  // Function to truncate long labels for x-axis
+  const trimLabel = (label, maxLength = 10) => 
+    label.length > maxLength ? `${label.slice(0, maxLength)}...` : label; 
+
+  // Function to truncate dropdown values
+  const trimDropdownValue = (value, maxLength = 20) =>
+    value.length > maxLength ? `${value.slice(0, maxLength)}...` : value;
+
+  // Handle multiselect change
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setSelectedLabels(typeof value === 'string' ? value.split(',') : value);
   };
 
-  // Filter data based on selected date
-  const getFilteredData = () => {
-    if (!selectedDate) return chartData.barData;
-    return chartData.barData.filter(item => item.date === selectedDate);
+  // Custom render function for selected values
+  const renderSelectedValues = (selected) => {
+    if (selected.length === 0) return '';
+    if (selected.length === 1) return trimDropdownValue(selected[0]);
+    return `${selected.length} items selected`;
   };
 
-  if (isLoading) {
-    return (
-      <div className="w-full p-4 bg-white rounded-lg shadow-md">
-        <div className="flex justify-center items-center h-64">
-          <p className="text-gray-500">Processing chart data...</p>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="w-full p-4 bg-white rounded-lg shadow-md">
-      {/* Date selector */}
-      <div className="mb-4 flex flex-wrap gap-2 justify-center">
-        {chartData.dates.map(date => (
-          <button
-            key={date}
-            onClick={() => handleDateClick(date)}
-            className={`px-3 py-1 rounded-md text-sm ${
-              selectedDate === date 
-                ? 'bg-blue-600 text-white' 
-                : 'bg-gray-200 hover:bg-gray-300'
-            }`}
-          >
-            {date}
-          </button>
-        ))}
-        {selectedDate && (
-          <button
-            onClick={() => setSelectedDate(null)}
-            className="px-3 py-1 rounded-md text-sm bg-red-500 text-white"
-          >
-            Show All
-          </button>
-        )}
-      </div>
-
-      {chartData.barData.length > 0 ? (
-        <div style={{ height: '400px' }}>
-          <ResponsiveBar
-            data={getFilteredData()}
-            keys={chartData.keys}
-            indexBy="date"
-            margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
-            padding={0.3}
-            groupMode="grouped"
-            valueScale={{ type: 'linear' }}
-            indexScale={{ type: 'band', round: true }}
-            colors={{ scheme: 'nivo' }}
-            borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
-            axisTop={null}
-            axisRight={null}
-            axisBottom={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: -45,
-              legend: 'Date',
-              legendPosition: 'middle',
-              legendOffset: 40
+  return ( 
+    <div style={{ padding: 20 }}> 
+      {/* Multiselect Dropdown to filter */} 
+      <Box mb={2} width={400}> 
+        <FormControl fullWidth> 
+          <InputLabel>Select Combinations</InputLabel> 
+          <Select 
+            multiple
+            value={selectedLabels} 
+            label="Select Combinations" 
+            onChange={handleChange}
+            renderValue={renderSelectedValues}
+            MenuProps={{
+              PaperProps: {
+                style: {
+                  maxHeight: 300,
+                  width: 400,
+                },
+              },
             }}
-            axisLeft={{
-              tickSize: 5,
-              tickPadding: 5,
-              tickRotation: 0,
-              legend: 'Count',
-              legendPosition: 'middle',
-              legendOffset: -40
-            }}
-            labelSkipWidth={12}
-            labelSkipHeight={12}
-            legends={[
-              {
-                dataFrom: 'keys',
-                anchor: 'bottom-right',
-                direction: 'column',
-                justify: false,
-                translateX: 120,
-                translateY: 0,
-                itemsSpacing: 2,
-                itemWidth: 100,
-                itemHeight: 20,
-                itemDirection: 'left-to-right',
-                itemOpacity: 0.85,
-                symbolSize: 20,
-                effects: [
-                  {
-                    on: 'hover',
-                    style: {
-                      itemOpacity: 1
-                    }
-                  }
-                ]
-              }
-            ]}
-            animate={true}
-            onClick={(node) => handleDateClick(node.indexValue)}
+          > 
+            {allLabels.map((label, index) => ( 
+              <MenuItem key={index} value={label}> 
+                {label.length > 20 ? (
+                  <Tooltip title={label} arrow placement="right">
+                    <Typography
+                      component="span"
+                      sx={{ 
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'nowrap',
+                        display: 'block',
+                        maxWidth: '100%'
+                      }}
+                    >
+                      {trimDropdownValue(label)}
+                    </Typography>
+                  </Tooltip>
+                ) : (
+                  label
+                )}
+              </MenuItem> 
+            ))} 
+          </Select> 
+        </FormControl> 
+      </Box> 
+
+      {/* Display selected items as chips */}
+      {selectedLabels.length > 0 && (
+        <Box mb={2} display="flex" flexWrap="wrap" gap={1}>
+          {selectedLabels.map((label, index) => (
+            <Chip
+              key={index}
+              label={trimDropdownValue(label, 30)}
+              onDelete={() => {
+                setSelectedLabels(prev => prev.filter(item => item !== label));
+              }}
+              size="small"
+              variant="outlined"
+              title={label} // Native tooltip for chips
+            />
+          ))}
+          <Chip
+            label="Clear All"
+            onClick={() => setSelectedLabels([])}
+            size="small"
+            variant="outlined"
+            color="secondary"
+            style={{ marginLeft: 8 }}
           />
-        </div>
-      ) : (
-        <div className="flex justify-center items-center h-64">
-          <p className="text-gray-500">No data available</p>
-        </div>
+        </Box>
       )}
-    </div>
-  );
-};
+
+      {/* Bar Chart */} 
+      <div style={{ height: 500 }}> 
+        <ResponsiveBar 
+          data={filteredData} 
+          keys={keys} 
+          groupMode="grouped" 
+          indexBy="label" 
+          margin={{ top: 50, right: 130, bottom: 120, left: 60 }} 
+          padding={0.4} 
+          valueScale={{ type: "linear" }} 
+          indexScale={{ type: "band", round: true }} 
+          colors={{ scheme: "category10" }} 
+          borderColor={{ from: "color", modifiers: [["darker", 1.6]] }} 
+          axisBottom={{ 
+            tickRotation: -45, 
+            legend: "Customer-Bind-Supplier-Operator", 
+            legendPosition: "middle", 
+            legendOffset: 70,
+            format: (label) => trimLabel(label, 20),
+            tickSize: 5,
+            tickPadding: 8,
+            tickValues: filteredData.length > 10 
+              ? filteredData
+                  .map((item, index) => {
+                    // Show every 2nd tick if 11-20 items, every 3rd if 21+ items
+                    const skipInterval = filteredData.length > 20 ? 3 : 2;
+                    return index % skipInterval === 0 ? item.label : null;
+                  })
+                  .filter(Boolean)
+              : undefined
+          }} 
+          axisLeft={{ 
+            legend: "Count", 
+            legendPosition: "middle", 
+            legendOffset: -40, 
+          }} 
+          labelSkipWidth={12} 
+          labelSkipHeight={12} 
+          legends={[ 
+            { 
+              dataFrom: "keys", 
+              anchor: "bottom-right", 
+              direction: "column", 
+              translateX: 120, 
+              itemWidth: 100, 
+              itemHeight: 20, 
+              symbolSize: 10, 
+              effects: [ 
+                { 
+                  on: "hover", 
+                  style: { 
+                    itemOpacity: 1, 
+                  }, 
+                }, 
+              ], 
+            }, 
+          ]} 
+          animate={true} 
+          motionStiffness={90} 
+          motionDamping={15} 
+        /> 
+      </div> 
+    </div> 
+  ); 
+} 
 
 export default BarGraph;
-

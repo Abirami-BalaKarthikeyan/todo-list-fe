@@ -57,23 +57,8 @@ function App() {
         >
           Scatter Plot
         </button>
-        <button
-          className={`px-4 py-2 rounded ${
-            activeTab === "sankey" ? "bg-blue-600 text-white" : "bg-gray-200"
-          }`}
-          onClick={() => setActiveTab("sankey")}
-        >
-          Sankey Chart
-        </button>
-        <button
-          className={`px-4 py-2 rounded ${
-            activeTab === "stream" ? "bg-blue-600 text-white" : "bg-gray-200"
-          }`}
-          onClick={() => setActiveTab("stream")}
-        >
-          Stream Chart
-        </button>
-
+      
+      
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "pie" ? "bg-blue-600 text-white" : "bg-gray-200"
