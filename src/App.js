@@ -11,6 +11,7 @@ const StreamChart = lazy(() => import("./components/StreamChart"));
 const PieChart = lazy(() => import("./components/PieChart"));
 const RadialBarChart = lazy(() => import("./components/RadialBarChart"));
 const PolarBarChart = lazy(() => import("./components/PolarBarChart"));
+const MultiAxisChart = lazy(() => import("./components/MultiAxisChart"));
 
 function App() {
   const data = initializeDataJson();
@@ -75,6 +76,14 @@ function App() {
         >
           Polar Bar Chart
         </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "multiaxis" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("multiaxis")}
+        >
+          Multi-Axis Chart
+        </button>
 
       </div>
 
@@ -97,7 +106,7 @@ function App() {
         {activeTab === "pie" && <PieChart data={data} />}
         {activeTab === "radial" && <RadialBarChart />}
         {activeTab === "polar" && <PolarBarChart />}
-
+        {activeTab === "multiaxis" && <MultiAxisChart />}
 
       </Suspense>
     </div>
