@@ -165,111 +165,171 @@ const SummaryDashboard = () => {
   }
 
   return (
-    <div className="w-full p-6 bg-white rounded-lg shadow-md border border-gray-200">
-      {/* Header */}
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">
-          E2E Hub Summary Report Dashboard
-        </h2>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+      {/* Modern Header */}
+      <div className="bg-white shadow-lg border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="flex items-center justify-between">
+            <div>
+              <div>
+                  <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                    E2E Hub Summary Report
+                  </h1>
+                  
+                </div>
+            </div>
+           
+          </div>
+        </div>
       </div>
 
-      {/* Applied Filters Section */}
-      <div className="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-800 mb-4">Applied Filters</h3>
+      <div className="max-w-7xl mx-auto px-6 py-8 space-y-8">
 
-        {/* Time Range */}
-        <div className="mb-4">
-          <h4 className="font-medium text-blue-700 mb-2">Time Range:</h4>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-            <div>
-              <span className="font-medium">Start:</span> {data5.query_info.timestamp_range.start}
-            </div>
-            <div>
-              <span className="font-medium">End:</span> {data5.query_info.timestamp_range.end}
-            </div>
-            <div>
-              <span className="font-medium">Timezone:</span> {data5.query_info.timestamp_range.timezone}
-            </div>
+        {/* Applied Filters Card */}
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
+            <h3 className="text-xl font-bold text-white flex items-center">
+              <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z" />
+              </svg>
+              Applied Filters
+            </h3>
           </div>
-        </div>
 
-        {/* Customer Names */}
-        <div className="mb-4">
-          <h4 className="font-medium text-blue-700 mb-2">Customer Names:</h4>
-          <div className="flex flex-wrap gap-2">
-            {data5.query_info.filters.customer_names.map((customer, index) => (
-              <span
-                key={index}
-                className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
-              >
-                {customer}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Customer Binds */}
-        <div className="mb-4">
-          <h4 className="font-medium text-blue-700 mb-2">Customer Binds:</h4>
-          <div className="flex flex-wrap gap-2">
-            {data5.query_info.filters.customer_binds.map((bind, index) => (
-              <span
-                key={index}
-                className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
-              >
-                {bind}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Selected Fields */}
-        <div>
-          <h4 className="font-medium text-blue-700 mb-2">Selected Fields:</h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
-            {data5.query_info.selected_fields.map((field, index) => (
-              <div key={index} className="text-gray-700">
-                • {field}
+          <div className="p-6 space-y-6">
+            {/* Time Range */}
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200">
+              <h4 className="font-semibold text-blue-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Time Range
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg p-3 border border-blue-100">
+                  <span className="text-xs text-gray-500 uppercase tracking-wide">Start</span>
+                  <div className="font-medium text-gray-900">{data5.query_info.timestamp_range.start}</div>
+                </div>
+                <div className="bg-white rounded-lg p-3 border border-blue-100">
+                  <span className="text-xs text-gray-500 uppercase tracking-wide">End</span>
+                  <div className="font-medium text-gray-900">{data5.query_info.timestamp_range.end}</div>
+                </div>
+                <div className="bg-white rounded-lg p-3 border border-blue-100">
+                  <span className="text-xs text-gray-500 uppercase tracking-wide">Timezone</span>
+                  <div className="font-medium text-gray-900">{data5.query_info.timestamp_range.timezone}</div>
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
+            </div>
 
-      {/* Summary Statistics */}
-      <div className="mb-8">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">Summary Statistics</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="p-4 bg-gray-50 rounded-lg border">
-            <div className="text-2xl font-bold text-gray-800">{summaryStats.totalRecords}</div>
-            <div className="text-sm text-gray-600">Total Records</div>
-          </div>
-          <div className="p-4 bg-blue-50 rounded-lg border">
-            <div className="text-2xl font-bold text-blue-800">{summaryStats.totalSubmissions}</div>
-            <div className="text-sm text-blue-600">Total Submissions</div>
-          </div>
-          <div className="p-4 bg-green-50 rounded-lg border">
-            <div className="text-2xl font-bold text-green-800">{summaryStats.totalSuccessfulSubmissions}</div>
-            <div className="text-sm text-green-600">Successful Submissions</div>
-          </div>
-          <div className="p-4 bg-red-50 rounded-lg border">
-            <div className="text-2xl font-bold text-red-800">{summaryStats.totalDeliveryFailures}</div>
-            <div className="text-sm text-red-600">Delivery Failures</div>
-          </div>
-        </div>
+            {/* Customer Names */}
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-200">
+              <h4 className="font-semibold text-green-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                Customer Names ({data5.query_info.filters.customer_names.length})
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {data5.query_info.filters.customer_names.map((customer, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-white text-green-800 rounded-full text-sm font-medium border border-green-200 shadow-sm"
+                  >
+                    {customer}
+                  </span>
+                ))}
+              </div>
+            </div>
 
-        {/* Success Rates */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div className="p-4 bg-yellow-50 rounded-lg border">
-            <div className="text-2xl font-bold text-yellow-800">{summaryStats.successRate}%</div>
-            <div className="text-sm text-yellow-600">Submission Success Rate</div>
-          </div>
-          <div className="p-4 bg-purple-50 rounded-lg border">
-            <div className="text-2xl font-bold text-purple-800">{summaryStats.deliverySuccessRate}%</div>
-            <div className="text-sm text-purple-600">Delivery Success Rate</div>
+            {/* Customer Binds */}
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200">
+              <h4 className="font-semibold text-purple-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                </svg>
+                Customer Binds ({data5.query_info.filters.customer_binds.length})
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {data5.query_info.filters.customer_binds.map((bind, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-white text-purple-800 rounded-full text-sm font-medium border border-purple-200 shadow-sm"
+                  >
+                    {bind}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Selected Fields */}
+            <div className="bg-gradient-to-r from-gray-50 to-slate-50 rounded-xl p-4 border border-gray-200">
+              <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Selected Fields ({data5.query_info.selected_fields.length})
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
+                {data5.query_info.selected_fields.map((field, index) => (
+                  <div key={index} className="text-gray-700 bg-white px-3 py-2 rounded-lg border border-gray-100">
+                    • {field}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Available X-Axis Fields */}
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-200">
+              <h4 className="font-semibold text-blue-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+                Available X-Axis Fields (38 Dimensions)
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs max-h-48 overflow-y-auto">
+                {[
+                  'timestamp', 'customer_name', 'customer_bind', 'status', 'supplier', 'supplier_bind',
+                  'destination_country_name', 'destination_operator_name', 'source_operator_code',
+                  'source_operator_name', 'destination_operator_code', 'lcr_name', 'source_mcc',
+                  'source_mnc', 'source_country_code', 'source_country_name', 'source_protocol',
+                  'visiting_operator', 'visiting_operator_id', 'destination_protocol',
+                  'customer_interconnect', 'supplier_interconnect', 'src_hub', 'dest_hub',
+                  'supplier_system_id', 'customer_system_id', 'spec_lcr', 'customer_kam',
+                  'supplier_kam', 'source_mnp_supplier', 'destination_mnp_supplier',
+                  'final_operator_name', 'destination_mnc_final', 'destination_mcc_final',
+                  'supplier_billing_logic', 'customer_billing_logic', 'traffic_type_customer',
+                  'traffic_type_supplier'
+                ].map((field, index) => (
+                  <div key={index} className="text-blue-800 bg-white px-2 py-1 rounded text-center border border-blue-100 font-mono">
+                    {field}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Available Y-Axis Fields */}
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-4 border border-green-200">
+              <h4 className="font-semibold text-green-800 mb-3 flex items-center">
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 00-2-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                Available Y-Axis Fields (12 Metrics)
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+                {[
+                  'total_submissions', 'submission_success', 'submission_efficiency', 'total_deliveries',
+                  'next_hop_success_new', 'next_hop_success_percent_final', 'delivery_failure_count_final',
+                  'count_successful_delivery_final', 'final_delivery_efficiency', 'percentage_failure',
+                  'percentage_successful', 'submission_error'
+                ].map((field, index) => (
+                  <div key={index} className="text-green-800 bg-white px-2 py-1 rounded text-center border border-green-100 font-mono">
+                    {field}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Data Preview Section */}
       <div className="mb-8">
@@ -403,7 +463,9 @@ const SummaryDashboard = () => {
           <div>GROUP BY all ORDER BY timestamp</div>
         </div>
       </div>
+      </div>
     </div>
+
   );
 };
 
