@@ -12,6 +12,7 @@ const PieChart = lazy(() => import("./components/PieChart"));
 const RadialBarChart = lazy(() => import("./components/RadialBarChart"));
 const PolarBarChart = lazy(() => import("./components/PolarBarChart"));
 const MultiAxisChart = lazy(() => import("./components/MultiAxisChart"));
+const SummaryDashboard = lazy(() => import("./components/SummaryDashboard"));
 
 function App() {
   const data = initializeDataJson();
@@ -21,7 +22,7 @@ function App() {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold text-center mb-4">
-        Data Visualization Dashboard
+      E2E HUB Summary Report (Sample data)
       </h1>
 
       {/* Tabs */}
@@ -84,6 +85,14 @@ function App() {
         >
           Multi-Axis Chart
         </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "summary" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("summary")}
+        >
+          Summary Dashboard
+        </button>
 
       </div>
 
@@ -107,6 +116,7 @@ function App() {
         {activeTab === "radial" && <RadialBarChart />}
         {activeTab === "polar" && <PolarBarChart />}
         {activeTab === "multiaxis" && <MultiAxisChart />}
+        {activeTab === "summary" && <SummaryDashboard />}
 
       </Suspense>
     </div>

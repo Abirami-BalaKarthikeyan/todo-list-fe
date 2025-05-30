@@ -1,4 +1,28 @@
 {
+  "query_info": {
+    "timestamp_range": {
+      "start": "2025-05-28 00:00:00",
+      "end": "2025-05-28 12:00:00",
+      "timezone": "Asia/Kolkata"
+    },
+    "filters": {
+      "customer_names": ["NEXMO INC", "12WE OPEW", "8x8 UK Limited", "A.A. Smartcomtech USA LLC"],
+      "customer_binds": ["Nexmo P2P_CS", "Nexmo A2P_CS_PM", "Nexmo P2P_CS", "8x8_1_A2P_CS", "Rv_12WEOPEW_HQ_SMPP_A2P_C_0", "SmartCOMA2P"]
+    },
+    "selected_fields": [
+      "timestamp",
+      "customer_name",
+      "customer_bind",
+      "supplier",
+      "destination_operator_name",
+      "sum(total_submissions) as total_submissions",
+      "sum(submission_success)",
+      "sum(delivery_failure_count_final)",
+      "count_successful_delivery_final"
+    ],
+    "group_by": "all",
+    "order_by": "timestamp"
+  },
   "data": {
     "x_axis": [
       {
