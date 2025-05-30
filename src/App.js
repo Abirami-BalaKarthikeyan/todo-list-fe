@@ -17,7 +17,7 @@ const SummaryDashboard = lazy(() => import("./components/SummaryDashboard"));
 function App() {
   const data = initializeDataJson();
   const sampleData = initializeDataJson2();
-  const [activeTab, setActiveTab] = useState("bar"); // 'bar', 'line', or 'heat'
+  const [activeTab, setActiveTab] = useState("summary"); // 'bar', 'line', or 'heat'
 
   return (
     <div className="p-4">
@@ -27,6 +27,14 @@ function App() {
 
       {/* Tabs */}
       <div className="flex justify-center space-x-4 mb-6">
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "summary" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("summary")}
+        >
+          Summary Dashboard
+        </button>
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "bar" ? "bg-blue-600 text-white" : "bg-gray-200"
@@ -85,14 +93,7 @@ function App() {
         >
           Multi-Axis Chart
         </button>
-        <button
-          className={`px-4 py-2 rounded ${
-            activeTab === "summary" ? "bg-blue-600 text-white" : "bg-gray-200"
-          }`}
-          onClick={() => setActiveTab("summary")}
-        >
-          Summary Dashboard
-        </button>
+        
 
       </div>
 
