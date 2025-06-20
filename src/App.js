@@ -13,6 +13,7 @@ const RadialBarChart = lazy(() => import("./components/RadialBarChart"));
 const PolarBarChart = lazy(() => import("./components/PolarBarChart"));
 const MultiAxisChart = lazy(() => import("./components/MultiAxisChart"));
 const SummaryDashboard = lazy(() => import("./components/SummaryDashboard"));
+const GaugeChart = lazy(() => import("./components/GaugeChart"));
 
 function App() {
   const data = initializeDataJson();
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold text-center mb-4">
-      E2E HUB Summary Report (Sample data)
+        E2E HUB Summary Report (Sample data)
       </h1>
 
       {/* Tabs */}
@@ -77,14 +78,14 @@ function App() {
         >
           Radial Bar Chart
         </button>
-        <button
+        {/* <button
           className={`px-4 py-2 rounded ${
             activeTab === "polar" ? "bg-blue-600 text-white" : "bg-gray-200"
           }`}
           onClick={() => setActiveTab("polar")}
         >
           Polar Bar Chart
-        </button>
+        </button> */}
         <button
           className={`px-4 py-2 rounded ${
             activeTab === "multiaxis" ? "bg-blue-600 text-white" : "bg-gray-200"
@@ -93,8 +94,22 @@ function App() {
         >
           Multi-Axis Chart
         </button>
-        
-
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "scatter" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("scatter")}
+        >
+          Scatter Plot
+        </button>
+        <button
+          className={`px-4 py-2 rounded ${
+            activeTab === "gauge" ? "bg-blue-600 text-white" : "bg-gray-200"
+          }`}
+          onClick={() => setActiveTab("gauge")}
+        >
+          Gauge Chart
+        </button>
       </div>
 
       {/* Chart display */}
@@ -118,7 +133,7 @@ function App() {
         {activeTab === "polar" && <PolarBarChart />}
         {activeTab === "multiaxis" && <MultiAxisChart />}
         {activeTab === "summary" && <SummaryDashboard />}
-
+        {activeTab === "gauge" && <GaugeChart data={data} />}
       </Suspense>
     </div>
   );
